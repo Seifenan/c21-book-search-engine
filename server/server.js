@@ -14,29 +14,29 @@ const app = express();
 // >>>>>>>>>>>>>
 // if using Apollo 3
 
-// const startServer = async () => {
-//   const server = new ApolloServer({
-//     typeDefs,
-//     resolvers,
-//     context: authMiddleware,
-//   });
-//   await server.start();
-//   server.applyMiddleware({ app });
-// };
+const startServer = async () => {
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    context: authMiddleware,
+  });
+  await server.start();
+  server.applyMiddleware({ app });
+};
 
-// startServer()
+startServer()
 
 // <<<<<<<<<<<<<<>>>>>>>>>>>>>>
 
 // >>>>>>>>>>>>>
 // if using Apollo 2
 
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  context: authMiddleware,
-});
-server.applyMiddleware({ app });
+// const server = new ApolloServer({
+//   typeDefs,
+//   resolvers,
+//   context: authMiddleware,
+// });
+// server.applyMiddleware({ app });
 
 // <<<<<<<<<<<<<<>>>>>>>>>>>>>>
 
