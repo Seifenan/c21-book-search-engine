@@ -42,6 +42,3 @@ db.once('open', () => {
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
   });
 });
-db.on("error", (err) => {
-  console.error("MongoDB connection error: ", err);
-});
