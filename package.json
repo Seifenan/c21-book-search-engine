@@ -1,5 +1,5 @@
 {
-  "name": "c21-book-search-engine",
+  "name": "book-search-engine",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
